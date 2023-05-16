@@ -116,7 +116,6 @@ if (apellido == "sanchez" && (nombre == "ger" || nombre == "german")) {
 } */
 
 // ----------------DESAFIO EN CLASE-----------
-// -----------------MOSTRAR GITHUB----------------
 /* let numero = prompt("Ingrese un numero");
 numero = parseFloat(numero);
 

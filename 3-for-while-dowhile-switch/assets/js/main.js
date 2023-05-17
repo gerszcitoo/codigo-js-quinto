@@ -9,8 +9,8 @@ console.log("Sigue el código"); */
 /* let ingresarNumero = parseInt(prompt("Ingrese un número"));
 let resultado;
 for (i = 1; i <= 10; i++) {
-    resultado = ingresarNumero * i;
-    console.log(ingresarNumero + " x10 " + i + " = " + resultado);
+  resultado = ingresarNumero * i;
+  alert(ingresarNumero + " x " + i + " = " + resultado);
 } */
 
 // ----------Turnos con for----------
@@ -25,9 +25,9 @@ for (i = 1; i <= 10; i++) {
     break;
   }
   console.log(i);
-}
+} */
 
-for (let i = 0; i < 10; i++) {
+/* for (let i = 0; i < 10; i++) {
   if (i == 5) {
     continue;
   }
@@ -48,7 +48,7 @@ while (repetir) {
 
 /* let entrada = prompt("Ingrese un dato (Para salir escriba esc)");
 while (entrada != "esc") {
-  console.log(entrada);
+  alert(entrada);
   entrada = prompt("Ingrese un dato (Para salir escriba esc)");
 } */
 
@@ -69,7 +69,7 @@ do {
 } while (numero != "esc"); */
 
 // ------------Switch----------
-let nombre = prompt("Ingrese su nombre (Para salir escriba esc)");
+/* let nombre = prompt("Ingrese su nombre (Para salir escriba esc)");
 nombre = nombre.toLowerCase();
 while (nombre != "esc") {
   switch (nombre) {
@@ -88,7 +88,7 @@ while (nombre != "esc") {
   }
   nombre = prompt("Ingrese su nombre (Para salir escriba esc)");
   nombre = nombre.toLowerCase();
-}
+} */
 
 // -----------Calculadora------------
 /* let numero1, numero2, operacion, continuar;

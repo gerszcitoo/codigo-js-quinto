@@ -93,29 +93,29 @@ while (nombre != "esc") {
 // -----------Calculadora------------
 /* let numero1, numero2, operacion, continuar;
 while (continuar != "no") {
-    do {
-        numero1 = parseFloat(prompt("Ingrese un numero"));
-        numero2 = parseFloat(prompt("Ingrese otro numero"));
-        operacion = prompt("Ingrese una operación (+, -, *, /)");
+  do {
+    numero1 = parseFloat(prompt("Ingrese un numero"));
+    numero2 = parseFloat(prompt("Ingrese otro numero"));
+    operacion = prompt("Ingrese una operación (+, -, *, /)");
 
-        if (isNaN(numero1) || isNaN(numero2)) {
-            alert("Por favor ingrese números válidos");
-        }
-    } while (isNaN(numero1) || isNaN(numero2))
-
-    switch (operacion) {
-        case "+":
-            alert(`El resultado de la suma es: ${numero1 + numero2}`);
-            break;
-        case "-":
-            alert(`El resultado de la suma es: ${numero1 - numero2}`);
-            break;
-        case "*":
-            alert("El resultado de la suma es: " + (numero1 * numero2));
-            break;
-        case "/":
-            alert("El resultado de la suma es: " + (numero1 / numero2));
-            break;
+    if (isNaN(numero1) || isNaN(numero2)) {
+      alert("Por favor ingrese números válidos");
     }
-    continuar = prompt("Desea continuar?");
+  } while (isNaN(numero1) || isNaN(numero2));
+
+  switch (operacion) {
+    case "+":
+      alert(`El resultado de la suma es: ${numero1 + numero2}`);
+      break;
+    case "-":
+      alert(`El resultado de la suma es: ${numero1 - numero2}`);
+      break;
+    case "*":
+      alert("El resultado de la suma es: " + numero1 * numero2);
+      break;
+    case "/":
+      alert("El resultado de la suma es: " + numero1 / numero2);
+      break;
+  }
+  continuar = prompt("Desea continuar?");
 } */

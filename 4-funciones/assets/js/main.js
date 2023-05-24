@@ -48,7 +48,7 @@ mostrar(resultado); */
       break;
     case "-":
       return numero1 - numero2;
-    case "*":
+    case "*": 
       return numero1 * numero2;
     case "/":
       return numero1 / numero2;

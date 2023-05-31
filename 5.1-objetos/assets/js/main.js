@@ -3,55 +3,54 @@
   this.nombre = nombre;
   this.precio = precio;
   this.stock = stock;
-  this.iva = function() {
+  this.iva = function () {
     this.precio = this.precio * 1.21;
-  }
+  };
 }
 const producto1 = new Producto("televisor", 120000, 3);
 console.log(producto1.precio);
-producto1.iva()
+producto1.iva();
 console.log("Precio con IVA: " + producto1.precio); */
 // ---------Métodos-------
 /* let cadena = "HOLA ET24";
 
 console.log(cadena.length);
-
-console.log(cadena.toLowerCase);
+console.log(cadena.toLowerCase());
 console.log(cadena.toUpperCase); */
 
 // ---------In y For In--------
 /* function Producto(nombre, precio, stock) {
-    this.nombre = nombre;
-    this.precio = precio;
-    this.stock = stock;
-    this.iva = function() {
-        this.precio = this.precio * 1.21;
-    }
+  this.nombre = nombre;
+  this.precio = precio;
+  this.stock = stock;
+  this.iva = function () {
+    this.precio = this.precio * 1.21;
+  };
 }
 const producto1 = new Producto("televisor", 120000, 3);
-producto1.iva()
+producto1.iva();
 producto1.nombre = "Televisor 50 pulgadas";
 // IN
 console.log("nombre" in producto1);
 // FOR IN
 for (const prop in producto1) {
-    console.log(producto1[prop]);
+  console.log(producto1[prop]);
 } */
 
-// ---------Clases y metodos (ejemplo)---------
+// ---------Clases y metodos (ejemplo)--------
 /* class Producto {
-    constructor(nombre, precio) {
-            this.nombre = nombre.toUpperCase();
-            this.precio = precio;
-            this.vendido = false;
-        }
-        // Los metodos solo se llaman desde el objeto padre
-    iva() {
-        this.precio = this.precio * 1.21;
-    }
-    vender() {
-        this.vendido = true;
-    }
+  constructor(nombre, precio) {
+    this.nombre = nombre.toUpperCase();
+    this.precio = precio;
+    this.vendido = false;
+  }
+  // Los metodos solo se llaman desde el objeto padre
+  iva() {
+    this.precio = this.precio * 1.21;
+  }
+  vender() {
+    this.vendido = true;
+  }
 }
 const producto1 = new Producto("Arroz", 125);
 const producto2 = new Producto("fideos", 50);
@@ -60,7 +59,7 @@ producto2.iva();
 producto1.vender();
 // FOR IN
 for (const prop in producto1) {
-    console.log(producto1[prop]);
+  console.log(producto1[prop]);
 } */
 
 // --------------EJEMPLO DE LA CLASE--------------

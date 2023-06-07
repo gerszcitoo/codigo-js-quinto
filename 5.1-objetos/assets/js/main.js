@@ -7,13 +7,13 @@
     this.precio = this.precio * 1.21;
   };
 }
+
 const producto1 = new Producto("televisor", 120000, 3);
 console.log(producto1.precio);
 producto1.iva();
 console.log("Precio con IVA: " + producto1.precio); */
 // ---------Métodos-------
 /* let cadena = "HOLA ET24";
-
 console.log(cadena.length);
 console.log(cadena.toLowerCase());
 console.log(cadena.toUpperCase); */
@@ -33,8 +33,8 @@ producto1.nombre = "Televisor 50 pulgadas";
 // IN
 console.log("nombre" in producto1);
 // FOR IN
-for (const prop in producto1) {
-  console.log(producto1[prop]);
+for (const propiedad in producto1) {
+  console.log(producto1[propiedad]);
 } */
 
 // ---------Clases y metodos (ejemplo)--------
@@ -64,7 +64,7 @@ for (const prop in producto1) {
 
 // --------------EJEMPLO DE LA CLASE--------------
 
-/* class Usuario {
+class Usuario {
   constructor(nombre, apellido, id) {
     this.nombre = nombre;
     this.apellido = apellido;
@@ -118,10 +118,9 @@ while (salida != true) {
 }
 let verMascota = confirm("Quiere ver los datos de la mascota?");
 if (verMascota) {
-  usuarioRegistrado.imprimir(mascotaRegistrada);
+  mascotaRegistrada.imprimir(mascotaRegistrada);
 }
 let verUsuario = confirm("Quiere ver los datos del usuario?");
 if (verUsuario) {
   usuarioRegistrado.imprimir(usuarioRegistrado);
 }
- */

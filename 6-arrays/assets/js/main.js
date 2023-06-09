@@ -1,6 +1,12 @@
 // -----------Arrays----------
-/* let lista = ["texto 1", "texto 2", 2, 5, false, { nombre: "Germán", apellido: "Sánchez" },
-    [1, 2]
+/* let lista = [
+  "texto 1",
+  "texto 2",
+  2,
+  5,
+  false,
+  { nombre: "Germán", apellido: "Sánchez" },
+  [1, 2, ["hOla"]],
 ];
 
 console.log(lista);
@@ -8,14 +14,20 @@ console.log(lista[1]);
 // llamar a un  objeto en un array
 console.log(lista[5].nombre);
 // llamar array dentro de array
-console.log(lista[6][1]); */
+console.log(lista[6][2]); */
 
 // ----------Recorrer Array-----------
-/* let lista = ["texto 1", "texto 2", 2, 5, false, { nombre: "German", apellido: "Sanchez" },
-    [1, 2]
+/* let lista = [
+  "texto 1",
+  "texto 2",
+  2,
+  5,
+  false,
+  { nombre: "German", apellido: "Sanchez" },
+  [1, 2],
 ];
 for (let i = 0; i < lista.length; i++) {
-    console.log(lista[i]);
+  console.log(lista[i]);
 } */
 
 // --------Agregar elementos a Array (push)-----------
@@ -47,7 +59,7 @@ console.log(listaSuper); */
 // ------------Borrar elemento X (splice)-------------
 /* let listaSuper = ["manzana", "agua", "huevos", "yerba", "leche", "jabon"];
 
-listaSuper.splice(2, 1);
+listaSuper.splice(2, 3);
 console.log(listaSuper); */
 
 // -----------Generar un string con elementos de array (join)---------
@@ -103,19 +115,21 @@ console.log(listaSuper); */
 // ------------Inertir orden de elementos (reverse)------------
 /* let listaSuper = ["manzana", "agua", "huevos", "yerba", "leche", "jabon"];
 
-let listaInvertida = listaSuper.reverse;
-console.log(listaInvertida); */
+listaSuper = listaSuper.reverse();
+console.log(listaSuper); */
 
 // -------------Ejemplo Arrays-----------
 /* let notas = [];
+alert(notas.length);
+
 let cantidad = 3;
 do {
   let notaNueva = parseInt(prompt("Ingrese una nota"));
   notas.push(notaNueva);
-  console.log(notas.length);
+  alert(notas.length);
 } while (notas.length != cantidad);
 
-console.log(notas); */
+alert(notas); */
 
 // -----------Array de objetos-----------
 /* class Producto {
@@ -127,13 +141,16 @@ console.log(notas); */
 
 let listaProductos = [];
 
-const agregarProd = () => {
+function agregarProd() {
   let nombre = prompt("Nombre del producto");
-  let precio = parseFloat(prompt("Nombre del producto"));
+  let precio = parseFloat(prompt("Precio del producto"));
   let prod = new Producto(nombre, precio);
   listaProductos.push(prod);
+  alert(JSON.parse(listaProductos));
   console.log(listaProductos);
-}; */
+}
+
+agregarProd(); */
 
 // ----------Recorrer array de objetos (For Of)----------
 class Producto {
@@ -148,16 +165,16 @@ let listaProductos = [
   { nombre: "ventilador", precio: "500" },
 ];
 
-const agregarProd = () => {
+function agregarProd() {
   let nombre = prompt("Nombre del producto");
   let precio = parseFloat(prompt("Nombre del producto"));
   let prod = new Producto(nombre, precio);
   listaProductos.push(prod);
-  console.log(listaProductos);
-};
+}
 
-for (let producto of listaProductos) {
-  console.log(
-    `Este producto es ${producto.nombre} y su precio es ${producto.precio}`
+agregarProd();
+for (let propiedad of listaProductos) {
+  alert(
+    `Este producto es ${propiedad.nombre} y su precio es ${propiedad.precio}`
   );
 }

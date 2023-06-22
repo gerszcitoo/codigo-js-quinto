@@ -1,7 +1,7 @@
 // ---------Métodos de acceso a los nodos-----------
 // 1. Por ID - trae un OBJETO
 /* let titulo = document.getElementById("titulo");
-console.log(document); */
+console.log(titulo); */
 
 // 2. Por clase - trae un ARRAY
 /* console.log(document.getElementsByClassName("parrafo"));
@@ -9,10 +9,10 @@ console.log(document); */
 console.log(document.getElementsByClassName("parrafo")[0]); */
 
 // 3. Por etiqueta - trae un ARRAY
-/* console.log(document.getElementsByTagName("h2"));*/
+// console.log(document.getElementsByTagName("h2"));
 
 // 4. Selectores - IGUAL que en CSS - SÓLO el PRIMER OBJETO que encuentra
-/* console.log(document.querySelector(".parrafo"));
+/* console.log(document.querySelector("#parrafo"));
 // Traer más de un objeto - trae un ARRAY
 console.log(document.querySelectorAll("#titulo"));
 console.log(document.querySelectorAll("div > form"));
@@ -44,12 +44,11 @@ titulo.style.display = "none"; */
 
 // ------Agregar Clase---------
 /* let titulo = document.getElementById("titulo");
-titulo.className = "container row"; */
+titulo.className = "titulo"; */
 
 // ------Cambiar atributos-------
 /* let titulo = document.getElementById("titulo");
 titulo.setAttribute("class", "titulo1");
-
 let link = document.querySelector("a");
 link.setAttribute("href", "https://www.google.com");
 link.setAttribute("target", "blank_"); */
@@ -57,7 +56,7 @@ link.setAttribute("target", "blank_"); */
 // ----------Agregar y sacar HTML-----------
 /* let subtitulo = document.createElement("h2");
 subtitulo.setAttribute("id", "nuevoElemento");
-subtitulo.innerHTML = "<a>Este es un link</a>";
+subtitulo.innerHTML = `<a href="">Este es un link</a>`;
 console.log(subtitulo);
 
 document.getElementById("aca").appendChild(subtitulo);
@@ -70,7 +69,7 @@ document.getElementById("nombre").value = "Nombre";
 console.log(document.getElementById("nombre").value); */
 
 // ---------Puesta en práctica---------
-/* class Producto {
+class Producto {
   constructor(nombre, categoria, precio) {
     this.nombre = nombre;
     this.categoria = categoria;
@@ -103,4 +102,4 @@ listaProductos.forEach((el) => {
                     <p>${el.categoria}</p>
                     <p>${el.precio}</p>`;
   document.getElementById("productos").appendChild(nodo);
-}); */
+});

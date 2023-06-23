@@ -1,48 +1,49 @@
-// let mensaje = "Bienvenidos a la clase 10";
-// console.log(mensaje);
-
 // ---------LOCAL STORAGE (se guarda como KEY, VALOR)----------
-// localStorage.setItem("saludo", mensaje);
+/* let mensaje = "Bienvenidos a la clase 10";
+localStorage.setItem("saludo", mensaje);
 
-/* console.log(localStorage.getItem("saludo"));
+console.log(localStorage.getItem("saludo"));
 
 let nombreUsuario = prompt("Ingrese su nombre");
 localStorage.setItem("nombre", nombreUsuario); */
 
 // --------SESSION STORAGE (solo guarda con la pestaña abierta)---------
-// sessionStorage.setItem("temporal", "esta es la clase 10 - storage");
+/* sessionStorage.setItem("temporal", "esta es la clase de storage");
 
 // Carrito entre distintos HTML y JS con LocalStorage
-// localStorage.setItem("carrito", "producto1");
+localStorage.setItem("carrito", "producto1"); */
 
 // ----------BORRAR ITEMS------------
 // borrar 1
-// localStorage.removeItem("saludo")
+/* localStorage.removeItem("saludo");
 // borrar todos
-// localStorage.clear();
+localStorage.clear(); */
 
 // ------------RECORRER STORAGE----------
 // GET ITEM EN LOCAL SIEMPRE DEVUELVE STRING
 /* localStorage.setItem("booleano", true);
 localStorage.setItem("numero", 1000);
 for (let i = 0; i < localStorage.length; i++) {
-    let clave = localStorage.key(i);
-    console.log(`clave: ${clave}, valor ${localStorage.getItem(clave)}`);
+  let clave = localStorage.key(i);
+  console.log(`clave: ${clave}, valor ${localStorage.getItem(clave)}`);
 } */
 
+// -----------JSON------------
+
 /* let product1 = {
-        nombre: "Auto",
-        precio: 1000
-    }
-    // localStorage.setItem("producto1", product1);
+  nombre: "Guaymallen de fruta ",
+  precio: 100,
+};
+// localStorage.setItem("producto1", product1);
+// no funciona porque es objeto
 
 // JSON
 // CONVERTIR A JSON (convierte a string)- JSON.stringify(objeto o array)
 localStorage.setItem("producto1", JSON.stringify(product1));
+console.log(localStorage.getItem("producto1"));
 // PARSEAR EL JSON (convierte de string a objeto)- JSON.parse(el json)
-let miProducto = JSON.parse((localStorage.getItem("producto1")));
-console.log(miProducto.nombre);
- */
+let miProducto = JSON.parse(localStorage.getItem("producto1"));
+console.log(miProducto.nombre); */
 
 // ----------EJEMPLO--------
 class Mascota {
@@ -73,3 +74,4 @@ const nuevaMascota = () => {
     localStorage.setItem("mascotas", JSON.stringify(listaNueva));
   }
 };
+nuevaMascota();

@@ -1,4 +1,4 @@
-// ------Detectar click en una card-------
+/* // ------Detectar click en una card-------
 let botones = document.querySelectorAll(".btn"); //trae un array
 
 for (let boton of botones) {
@@ -7,6 +7,8 @@ for (let boton of botones) {
   };
 }
 
+let carrito = [];
+
 function agregarCarrito(e) {
   let elemento = e.target;
   // uso e.target para saber qué boton traigo
@@ -14,10 +16,19 @@ function agregarCarrito(e) {
   console.log(padre);
   let nombre = padre.querySelector("h2").innerText;
   let precio = padre.querySelector("p").innerText;
-  console.log(`Nombre: ${nombre}, Precio: ${precio}`);
+  alert(`Nombre: ${nombre}, Precio: ${precio}`);
+  let producto = {
+    nombre: nombre,
+    precio: precio,
+  };
+
+  carrito.push(JSON.stringify(producto));
+
+  localStorage.setItem("carrito", carrito);
+
   // se puede crear objeto
   // let producto = new Productos(nombre, precio)
-}
+} */
 
 // -------------Parte 2------------
 // ----------LIBRERIAS------------

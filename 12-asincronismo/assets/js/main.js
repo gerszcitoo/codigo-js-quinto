@@ -1,22 +1,19 @@
 // -----------------------ASINCRONÍA-------------------------
 // ----------set time out (ejecutar tras x tiempo)------------
-console.log("Bienvenidos");
+/* console.log("Bienvenidos");
 console.log("====================");
 
-console.log("Estamos aprendiendo JavaScript");
-console.log("====================");
-
-/* setTimeout(() => {
+setTimeout(() => {
   console.log("Estamos aprendiendo JavaScript");
   console.log("====================");
-}, 5000); */
+}, 1000);
 
-console.log("Esta es la clase de asincronía");
+console.log("Esta es la clase de asincronía"); */
 
 // ---------set interval (repetir algo)--------------
 /* setInterval(() => {
   console.log("tic");
-}, 1000); */
+}, 2000); */
 
 // ---------clear interval (frenar interval)-------------
 
@@ -37,8 +34,7 @@ let intervalo = setInterval(() => {
 const fin = setTimeout(() => {
   console.log("fin");
 }, 2000);
-// nunca se ejecuta porque se cancela
-clearTimeout(fin); */
+// nunca se ejecuta porque se cancela */
 
 // ------------------------PROMESAS---------------------------
 
@@ -81,7 +77,7 @@ promesa
 
 // --------------EJEMPLO----------------
 // (usar promesas para cargar contenido pesado mas tarde)
-/* const llamarProductos = () => {
+const llamarProductos = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(listaProductos);
@@ -106,4 +102,4 @@ const mostrarProductos = (array) => {
 
 llamarProductos().then((respuesta) => {
   mostrarProductos(respuesta);
-}); */
+});
